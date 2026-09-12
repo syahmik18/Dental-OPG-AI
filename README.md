@@ -53,14 +53,24 @@ ml/
 - **Streamlit** for the interactive web demo
 - **LabelMe** for dataset annotation
 
+## Model Weights
+
+Trained weights are hosted on Hugging Face: [syahmik18/dentalscan-ai](https://huggingface.co/syahmik18/dentalscan-ai)
+
+Download programmatically:
+```python
+from huggingface_hub import hf_hub_download
+
+unet_weights = hf_hub_download(repo_id="syahmik18/dentalscan-ai", filename="attention_unet_best.pth")
+yolo_weights = hf_hub_download(repo_id="syahmik18/dentalscan-ai", filename="best_caries_yolo26.pt")
+```
+
 ## Running the demo
 
 ```bash
 pip install -r requirements.txt
 streamlit run ml/app.py
 ```
-
-> Note: trained model weights (`.pth` / `.pt`) are not included in this repo due to file size — see below if you'd like to reproduce results or request the weights.
 
 ## Results
 
