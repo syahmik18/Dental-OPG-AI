@@ -68,8 +68,10 @@ yolo_weights = hf_hub_download(repo_id="syahmik18/dentalscan-ai", filename="best
 ## Running the demo
 
 ```bash
+# Step 1 - Install PyTorch (CPU)
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Step 2 - Install all other dependencies
 pip install -r requirements.txt
-streamlit run ml/app.py
 ```
 
 ## Results
