@@ -1,0 +1,54 @@
+# ============================================================
+# DentalScan AI - Requirements
+# Caries and Nerve Canal Detection Using CNN
+# Khairul Syahmi Bin Azman | UiTM | 2026
+# ============================================================
+# 
+# INSTALLATION:
+#   pip install -r requirements.txt
+#
+# NOTE: PyTorch must be installed separately depending on your setup:
+#
+#   CPU only (laptop):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+#   NVIDIA GPU (CUDA 11.8):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#
+#   NVIDIA GPU (CUDA 12.1):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+#   Mac M1/M2 (MPS):
+#   pip install torch torchvision
+#
+#   Google Colab / Kaggle:
+#   torch is pre-installed, just run:
+#   pip install -r requirements.txt
+# ============================================================
+
+# ── Deep Learning ────────────────────────────────────────────
+torch>=2.1.0
+torchvision>=0.16.0
+
+# ── Object Detection (YOLO26m) ───────────────────────────────
+ultralytics>=8.4.0
+
+# ── Image Processing ─────────────────────────────────────────
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# ── Data Augmentation ────────────────────────────────────────
+albumentations>=1.3.0
+
+# ── Numerical Computing ──────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.11.0
+
+# ── Training Utilities ───────────────────────────────────────
+tqdm>=4.65.0
+
+# ── Evaluation and Visualization ─────────────────────────────
+matplotlib>=3.7.0
+
+# ── Web Application ──────────────────────────────────────────
+streamlit>=1.28.0
